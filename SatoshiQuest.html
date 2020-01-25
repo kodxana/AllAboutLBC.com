@@ -76,7 +76,48 @@ crypt_single_base_currency = "Bitcoin (BTC)";crypt_single_target_currency = "US 
 				<img class="img-responsive img-rounded feat-image" src="Images/BTC.png">
 				<div class="feat-desc">
 					<h2 class="feat-title">What is SatoshiQuest</h2>
-					<p> SatoshiQuest is a Bitcoin Minecraft Treasure hunt where players search the vast minecraft landscapes in search of 1 treasure.</p><p> <strong>You can connect any Java Minecraft 1.13.2 to SatoshiQuest.AllAboutBTC.com to join! we are currently in beta testing</strong> <br>Check out the Discord: <a href="https://discord.gg/S38Ser6">Discord</a> Lots of live info auto posted from ingame to discord.</p> <p> Players use bitcoin to get lives. Each Player is given an address upon first login, that is the players deposit address, once a player has Bitcoin ingame and confirmed on chain, it can be used to get lives.</p> <p> <strong>You can not leave spawn without lives.</strong></p> <p>Most of the bitcoin that is used to get lives will be sent to the Treasure address with 10% going to Dev fee. Bitcoin price ingame is checked every 15 minutes, and lives prices are based of that 15 minute check price converted from $1/Life.</p> <p> When someone starts getting near the loot (within 25% of the max blocks the loot could spawn) it will start announcing that players location every chunk so other players can rush over to try to claim first or also so players dont camp on the loot spot.</p> <p> When someone wins if there is enough treasure to pay the fee it will send to that players ingame wallet if no external wallet is set. 85% of treasure won goes to the winner, the rest is sent back to treasure wallet for next round and used for winner fees.</p> <p> <strong>On Every round won if the loot transfers then every player loses 1 life, if the loot doesnt transfer due to fees/other then no one loses a life.</strong>
+					<p> SatoshiQuest is a Bitcoin Minecraft Treasure hunt where players search the vast minecraft landscapes in search of 1 treasure.</p>
+
+<p> <strong>You can connect any Java Minecraft 1.13.2 to SatoshiQuest.AllAboutBTC.com to join! we are currently out of beta, and about to release!</strong> <br>Check out the Discord: <a href="https://discord.gg/S38Ser6">https://discord.gg/S38Ser6</a> Lots of live info auto posted from ingame to discord.</p> 
+<p>
+<strong>Spawn is locked until release date/time. players are still allowed to login and use their wallet and buy lives while waiting for release.</strong>
+</p>
+<strong>Fair Release Time: Jan 26, 7PM EST.</strong>
+<!-- Display the countdown timer in an element -->
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 26, 2020 19:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "LIVE NOW!";
+  }
+}, 1000);
+</script>
+
+<p> Players use bitcoin to get lives. Each Player is given an address upon first login, that is the players deposit address, once a player has Bitcoin ingame and confirmed on chain, it can be used to get lives.</p> <p> <strong>You can not leave spawn without lives.</strong></p> <p>Most of the bitcoin that is used to get lives will be sent to the Treasure address with 10% going to Dev fee. Bitcoin price ingame is checked every 15 minutes, and lives prices are based of that 15 minute check price converted from $1/Life.</p> <p> When someone starts getting near the loot (within 25% of the max blocks the loot could spawn) it will start announcing that players location every chunk so other players can rush over to try to claim first or also so players dont camp on the loot spot.</p> <p> When someone wins if there is enough treasure to pay the fee it will send to that players ingame wallet(if no external wallet is set), 85% of treasure won goes to the winner, the rest is sent back to treasure wallet for next round and used for winner fees.</p> <p> <strong>On Every round won if the loot transfers then every player loses 1 life, if the loot doesnt transfer due to fees/other then no one loses a life.</strong>
 </p>
 <br>Satoshiquest is 100% open source: <a href="https://github.com/BitcoinJake09/SatoshiQuest">GitHub</a>
 
@@ -105,6 +146,8 @@ crypt_single_base_currency = "Bitcoin (BTC)";crypt_single_target_currency = "US 
 <p><strong>/lives 2 buy</strong> will get you 2 lives using your ingame bitcoin wallet.</p>
 
 <p><strong>/leaderboard</strong> will show all past winners/rounds/amounts won, values.</p>
+
+<p><strong>*All in game transaction are 100% on chain and will require a fee for each TX.</strong></p>
 </p>
 				</div>
 		 	</div>
