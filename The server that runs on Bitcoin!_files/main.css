@@ -67,7 +67,7 @@ section.main { padding: 2rem 0 2rem; }
 .site-header .navbar-nav, .site-header.simple-header.navbar { display: flex; justify-content: space-between; align-items: center; }
 
 /** Site header */
-.site-header { image-rendering: -webkit-optimize-contrast; image-rendering: -webkit-crisp-edges; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: pixelated; background: url("/images/frame.png"), url("btccpp.png"); background-size: cover, cover; background-position: center, top; background-attachment: fixed; color: white; padding: 2rem 0; }
+.site-header { image-rendering: -webkit-optimize-contrast; image-rendering: -webkit-crisp-edges; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: pixelated; background: url("/images/frame.png"), url("btccpp0.png"); background-size: cover, cover; background-position: center, top; background-attachment: fixed; color: white; padding: 2rem 0; }
 .site-header .navbar-brand { width: 100%; text-align: center; padding: 4rem 0 2rem; margin: 0 auto; float: none; display: block; }
 .site-header .navbar-brand img { display: inline-block; width: 90%; max-width: 600px; }
 @media screen and (max-width: 991px) { .site-header .navbar-brand img { width: 80%; max-width: 450px; } }
@@ -181,6 +181,9 @@ ul li a:hover { color: #ffcb5e; }
 .qr-code-container { width: 100%; max-width: 360px; margin: 1rem auto; border: 1px solid #DDD; text-align: center; }
 .qr-code-container .qr-code { width: 100%; }
 .qr-code-container span { font-size: 14px; margin-top: -30px; margin-bottom: 20px; display: block; }
+
+.bitcoiner-container { width: 100%; max-width: 14700px; margin: 1rem auto; border: 1px solid #DDD; text-align: center; }
+.bitcoiner-container span { font-size: 14px; margin-top: -30px; margin-bottom: 20px; display: block; }
 
 .donate { padding: 3rem 0; }
 
