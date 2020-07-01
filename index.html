@@ -19,22 +19,77 @@
 
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+	margin: 0;
+	background: #FFFFFF;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #FFFFFF;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
 ul {
-  list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  list-style: none;
+  align-content: center;
 }
 
 li {
-  float: right;
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
 }
 
 li a {
-  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
   padding: 8px;
   background-color: #006149;
 }
+
+nav a:hover {
+  color: #FFFFFF;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+
 </style>
 
 </head>
